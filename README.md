@@ -1,2 +1,6 @@
 # beta_hedge
-This script allows you to hedge the beta of your portfolio relative to a benchmark while maintaining alpha, allowing for the removal of the part of returns driven by the market and leaving only the returns driven by the desired factors
+This script allows you to hedge the beta of your portfolio relative to a benchmark while maintaining alpha, allowing for the removal of the part of returns driven by the market and leaving only the returns driven by the desired factors. 
+The script will pull data for a stock and a benchmark, calculate the alpha returned by the stock and its beta to the benchmark, then hedge the beta.
+Substituting the stock's daily returns for your portfolio's daily returns would make for a more realistic exercise, however for the purposes of this script, daily return data for $CVNA is used along with $QQQ returns as the benchmark.
+When running the script, returns of the stock & the benchmark will first be plotted and the alpha & beta will be printed in the terminal, next returns of the stock and the benchmark along with a regression line will be plotted, and finally returns of the beta-hedged stock & the benchmark will be plotted and the resulting alpha & beta will be printed in the terminal.
+You will notice that while the alpha returned both before and after hedging remain essentially the same, the beta is reduced drastically. A resulting beta of (or very near) zero indicates fully hedged.
